@@ -1,5 +1,4 @@
 // Navigation button
-console.log(window.location.pathname)
 let clicked = false;
 
 document.querySelector(".nav-btn").addEventListener("click", () => {
