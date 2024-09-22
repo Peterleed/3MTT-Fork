@@ -417,7 +417,7 @@ header nav .login-btn button:hover {
 .testimonials-section .sub-section-testimonial .clone {
     border: 1px solid #eaeaea;
     border-radius: 30px;
-    height: 350px;
+    height: max-content;
     width: 33%;
     margin-right: 4px;
     text-align: start;
@@ -768,7 +768,7 @@ footer {
     }
     
     .testimonials-section .sub-section-testimonial .clone {
-        height: 250px;
+        height: max-content;
         min-width: 100%;
     }
 
@@ -949,7 +949,7 @@ footer {
     }
     
     .testimonials-section .sub-section-testimonial .clone {
-        height: 450px;
+        height: max-content;
     }
 
     .testimonials-section .sub-section-testimonial {

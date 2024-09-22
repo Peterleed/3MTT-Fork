@@ -187,7 +187,7 @@ const infoImages = document.querySelectorAll(".scale-img");
 infoImages.forEach(function (each) {
   window.addEventListener("scroll", () => {
     if (isInViewport(each, 20)) {
-      each.style.transform = `scale(${1 + window.scrollY / 30000})`;
+      each.style.transform = `scale(${1 + window.scrollY / 27000})`;
     }
   });
 });
@@ -363,6 +363,11 @@ if (document.querySelector('.testimonials')){
   let testmWidth = testimonials[0].clientWidth + 4;
 
   let isDraggingTestm = false;
+
+  const secondClone = testimonials[1];
+  const secondCloneHeight = secondClone.clientHeight;
+  testimonials[0].style.height = `${secondCloneHeight}px`;
+  testimonials[2].style.height = `${secondCloneHeight}px`;
 
   function draggingTestm(e) {
     if (!isDraggingTestm) return;
