@@ -187,18 +187,14 @@
   padding: 9vh 4vw;
   position: relative;
   overflow: hidden;
-  /* background: url("/assets/images/Asset-3prtn.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #f1f0f0; */
 }
 
 .explore .explore-img img {
   position: absolute;
   inset: 0;
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: flex;
   align-self: center;
   z-index: -2;
@@ -216,7 +212,7 @@
     rgba(241, 240, 240, 0.5)
   );
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .explore:hover .explore-gradient {
